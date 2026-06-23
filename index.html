@@ -7,7 +7,15 @@
 <meta name="description" content="Original Grinds is Fredericksburg's indie vegan coffee shop, art gallery, and live music venue. Specialty lattes, vegan baked goods, Open Mic Wednesdays, and Poetry Nights. 615 Caroline St.">
 <meta property="og:title" content="Original Grinds | Vegan Coffee, Art & Music in Fredericksburg VA">
 <meta property="og:description" content="Specialty lattes, vegan baked goods, local art, and live music in historic downtown Fredericksburg.">
+<meta property="og:image" content="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<meta property="og:url" content="https://kalnyesgrowth.github.io/original-grinds/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Original Grinds | Vegan Coffee, Art & Music in Fredericksburg VA">
+<meta name="twitter:description" content="Specialty lattes, vegan baked goods, local art, and live music in historic downtown Fredericksburg.">
+<meta name="twitter:image" content="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1200">
 <link rel="canonical" href="https://kalnyesgrowth.github.io/original-grinds/">
+<link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=bonny@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
 <style>
 :root{
@@ -205,6 +213,7 @@ footer{background:var(--bg-dark);padding:60px 20px 20px;color:rgba(255,255,255,.
 .popup-overlay.show{display:flex}
 .popup{background:#fff;border-radius:var(--radius);padding:40px;max-width:440px;width:90%;text-align:center;position:relative}
 .popup-close{position:absolute;top:12px;right:16px;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text-muted)}
+summary::-webkit-details-marker{display:none}
 .popup h3{font-family:var(--font-heading);margin-bottom:8px}
 .popup p{color:var(--text-muted);font-size:var(--text-sm);margin-bottom:20px}
 .popup-btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 28px;border-radius:var(--radius);font-weight:600;text-decoration:none;transition:background .3s}
@@ -249,7 +258,7 @@ footer{background:var(--bg-dark);padding:60px 20px 20px;color:rgba(255,255,255,.
   "@type":"CafeOrCoffeeShop",
   "name":"Original Grinds",
   "alternateName":"OGs",
-  "image":"https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1200",
+  "image":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1200",
   "address":{"@type":"PostalAddress","streetAddress":"615 Caroline St","addressLocality":"Fredericksburg","addressRegion":"VA","postalCode":"22401","addressCountry":"US"},
   "telephone":"(540) 681-1576",
   "url":"https://kalnyesgrowth.github.io/original-grinds/",
@@ -285,7 +294,7 @@ footer{background:var(--bg-dark);padding:60px 20px 20px;color:rgba(255,255,255,.
 
 <!-- HERO -->
 <section id="hero">
-  <canvas id="heroCanvas"></canvas>
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
   <div class="hero-content">
     <div class="hero-badge">Vegan Coffee Shop &middot; Art Gallery &middot; Live Music</div>
     <h1>Original Grinds</h1>
@@ -611,7 +620,7 @@ footer{background:var(--bg-dark);padding:60px 20px 20px;color:rgba(255,255,255,.
       </div>
       <div>
         <div class="map-wrap">
-          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-77.4600%2C38.2990%2C-77.4550%2C38.3020&layer=mapnik&marker=38.3004%2C-77.4574" loading="lazy"></iframe>
+          <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-77.4600%2C38.2990%2C-77.4550%2C38.3020&layer=mapnik&marker=38.3004%2C-77.4574" loading="lazy" title="Map of Original Grinds location"></iframe>
         </div>
         <a href="https://maps.google.com/?q=615+Caroline+St+Fredericksburg+VA+22401" target="_blank" class="map-link">Open in Google Maps</a>
       </div>
@@ -710,7 +719,7 @@ footer{background:var(--bg-dark);padding:60px 20px 20px;color:rgba(255,255,255,.
 <!-- POPUPS -->
 <div class="popup-overlay" id="popup-exit">
   <div class="popup">
-    <button class="popup-close">&times;</button>
+    <button class="popup-close" aria-label="Close">&times;</button>
     <h3>Before You Go</h3>
     <p>Follow us on Instagram for daily specials, event updates, and behind-the-scenes at OGs.</p>
     <a href="https://www.instagram.com/ogsfxbg/" target="_blank" class="popup-btn">Follow @ogsfxbg</a>
@@ -718,7 +727,7 @@ footer{background:var(--bg-dark);padding:60px 20px 20px;color:rgba(255,255,255,.
 </div>
 <div class="popup-overlay" id="popup-scroll">
   <div class="popup">
-    <button class="popup-close">&times;</button>
+    <button class="popup-close" aria-label="Close">&times;</button>
     <h3>Join the OGs Community</h3>
     <p>96+ Google reviews and counting. People love Original Grinds.</p>
     <a href="#reviews" class="popup-btn" onclick="document.getElementById('popup-scroll').classList.remove('show')">Read Reviews</a>
@@ -726,7 +735,7 @@ footer{background:var(--bg-dark);padding:60px 20px 20px;color:rgba(255,255,255,.
 </div>
 <div class="popup-overlay" id="popup-timed">
   <div class="popup">
-    <button class="popup-close">&times;</button>
+    <button class="popup-close" aria-label="Close">&times;</button>
     <h3>Order Ahead</h3>
     <p>Skip the wait. Order your favorite latte on DoorDash and pick it up on Caroline Street.</p>
     <a href="https://www.doordash.com/store/original-grinds-fredericksburg-34363953/" target="_blank" class="popup-btn">Order on DoorDash</a>
